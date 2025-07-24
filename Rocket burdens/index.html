@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rocket Burden Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Rocket Burden Visualizer</h2>
+  <form id="burden-form">
+  <input type="text" id="burden-text" placeholder="Burden text" required />
+  <label for="burden-size">Burden Size (1–20):</label>
+  <input type="number" id="burden-size" min="1" max="20" required />
+  <button type="submit">Add Burden</button>
+  <p id="click-instruction">Click on the rocket area to place your burden.</p>
+</form>
+
+
+  <svg id="rocket-svg" width="600" height="800">
+    <!-- Embed your SVG rocket below -->
+    <image href="rocket.svg" width="300" height="400" x="150" y="100" />
+
+    <!-- Chains and burdens will be added dynamically here -->
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
